@@ -217,7 +217,19 @@ namespace ContentEditor
             sFileName.Replace("content", "preview");
 
             StreamWriter sw = new StreamWriter(Server.MapPath(sFileName));
+            FileInfo f = new FileInfo(Server.MapPath(sFileName));
 
+            string[] fileParts = f.Name.Split('.');
+            string sPreviewSection = "";
+            if (fileParts.Length == 4)
+            {
+                if (fileParts[3].EndsWith("txt"))
+                {
+                    sPreviewSection = fileParts[2];
+                }
+            }
+            
+            
             sw.Write(TextBoxEdit.Text);
 
             sw.Close();
@@ -227,7 +239,8 @@ namespace ContentEditor
 
             StringBuilder sb = new StringBuilder();
             sb.Append("<script>");
-            sb.Append("window.open('" + sPreviewPath + "?preview=yes', '', '');");
+            //sb.Append("window.open('" + sPreviewPath + "?preview=yes&section=', '', '');");
+            sb.Append("window.open('" + sPreviewPath + "?preview=yes&section=" + sPreviewSection + "', '', '');");
             sb.Append("</script>");
             
             Page.RegisterStartupScript("test", sb.ToString());
