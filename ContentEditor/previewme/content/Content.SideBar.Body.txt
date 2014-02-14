@@ -1,0 +1,14 @@
+--ss An extraordinary cappuccino bar. . .
+Our convenient sidewalk location has a comfortable atmosphere that makes you want to come in and relax with your favorite fresh brew. For those cool days, we have a fireplace to warm you near the sofa, or enjoy a table by the windows while reading your favorite novel. . .
+
+
+<center><a href="Main.aspx" target="_top"><img src="picts/sidebar-left.jpg" class="borders" alt="Home"></a>
+</center>
+
+--ss Totally Free WiFi:
+Free wireless internet access, without requiring you to sign on, create a password, agree to a contract, or pay. <a href="contact.aspx" target="_top" class="sidelink">Find out more now...</a>
+
+
+
+ 
+

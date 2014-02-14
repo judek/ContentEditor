@@ -1,0 +1,5 @@
+Test test test.
+
+</asp:Literal><img src="picts/college-4.jpg" border="0" class="borders" alt="image">
+
+Test test test.
