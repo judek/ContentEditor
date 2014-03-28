@@ -63,7 +63,9 @@
         onclick="ButtonSave_Click" Text="Save Changes" BackColor="#FF3300" />
     
     <p>
-        &nbsp;</p>
+        <asp:CheckBox ID="CheckBoxDontTweet" runat="server" 
+            Text="DO NOT Tweet changes" />
+    </p>
     
     </form>
 </body>

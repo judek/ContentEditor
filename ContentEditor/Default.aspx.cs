@@ -202,7 +202,9 @@ namespace ContentEditor
             string sUpdatedPage = "http://rivervalleycommunity.org/" + DropDownListPages.SelectedItem.Text + ".aspx";
 
             string tweet = DropDownListPages.SelectedItem.Text + " page updated " + sUpdatedPage;
-            AddTweet(tweet);
+            
+            if(false == CheckBoxDontTweet.Checked)
+                AddTweet(tweet);
 
                 
             DropDownListRevisions.SelectedIndex = 0;
